@@ -25,3 +25,9 @@ hs_err_pid*
 
 # VCS file
 vcs.xml
+/c2c-social-govern.iml
+/c2c-social-govern-reward-api/c2c-social-govern-reward-api.iml
+/c2c-social-govern-reward/c2c-social-govern-reward.iml
+/c2c-social-govern-reviewer-api/c2c-social-govern-reviewer-api.iml
+/c2c-social-govern-reviewer/c2c-social-govern-reviewer.iml
+/c2c-social-govern-report/c2c-social-govern-report.iml
