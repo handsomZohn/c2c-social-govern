@@ -11,5 +11,4 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(com.zhss.c2c.social.govern.report.Application.class, args);
     }
-
 }
