@@ -31,3 +31,12 @@ vcs.xml
 /c2c-social-govern-reviewer-api/c2c-social-govern-reviewer-api.iml
 /c2c-social-govern-reviewer/c2c-social-govern-reviewer.iml
 /c2c-social-govern-report/c2c-social-govern-report.iml
+/c2c-social-govern-report/target/classes/application.properties
+/c2c-social-govern-reviewer/target/classes/application.properties
+/c2c-social-govern-reward/target/classes/application.properties
+/c2c-social-govern-report/target/classes/config/application-home.properties
+/c2c-social-govern-reviewer/target/classes/config/application-home.properties
+/c2c-social-govern-reward/target/classes/config/application-home.properties
+/c2c-social-govern-report/target/classes/config/application-work.properties
+/c2c-social-govern-reviewer/target/classes/config/application-work.properties
+/c2c-social-govern-reward/target/classes/config/application-work.properties

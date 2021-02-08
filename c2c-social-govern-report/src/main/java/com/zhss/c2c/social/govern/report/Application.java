@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Import;
 @Import(DruidDataSourceConfig.class)
 public class Application {
     public static void main(String[] args) {
+        //  启动举报服务
         SpringApplication.run(com.zhss.c2c.social.govern.report.Application.class, args);
     }
 }
