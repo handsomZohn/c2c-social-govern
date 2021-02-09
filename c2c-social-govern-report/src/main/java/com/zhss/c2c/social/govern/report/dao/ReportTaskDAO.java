@@ -24,4 +24,11 @@ public interface ReportTaskDAO {
      * @param reportTask 举报任务
      */
     void update(ReportTask reportTask);
+
+    /**
+     * 根据id查询举报任务是否结束 true结束 false未结束
+     * @param id
+     * @return
+     */
+    boolean getReportResult(long id);
 }

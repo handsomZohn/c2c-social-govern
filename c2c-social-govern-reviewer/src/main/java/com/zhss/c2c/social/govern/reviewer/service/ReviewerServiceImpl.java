@@ -20,6 +20,7 @@ import java.util.List;
         // 接口类型
         interfaceClass = ReviewerService.class,
         // 集群故障转移策略 单机的时候这个能不能写 我觉得是不能写
+        // 2020.02.09 实践证明 单机的时候，写了也无所谓
         cluster = "failfast",
         // 负载均衡算法
         loadbalance = "roundrobin"

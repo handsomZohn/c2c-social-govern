@@ -45,4 +45,16 @@ public class ReportTaskDAOImpl implements ReportTaskDAO {
     public void update(ReportTask reportTask) {
         reportTaskMapper.update(reportTask);
     }
+
+
+    /**
+     * 根据id查询举报任务是否结束 true结束 false未结束
+     * @param id
+     * @return
+     */
+    @Override
+    public boolean getReportResult(long id) {
+        long reportResult = reportTaskMapper.getReportResult(id);
+        return 1 == reportResult ? true : false;
+    }
 }

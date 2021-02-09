@@ -18,4 +18,11 @@ public interface ReportTaskService {
      * @return 举报任务
      */
     ReportTask queryById(Long id);
+
+    /**
+     * 根据id查询举报任务是否结束 true结束 false未结束
+     * @param id
+     * @return
+     */
+    boolean getReportResult(long id);
 }

@@ -10,8 +10,8 @@ public interface ReportTaskMapper {
      *
      * @param reportTask
      */
-    @Insert("INSERT INTO report_task(type,report_user_id,report_content,target_id) " +
-            "VALUES(#{type},#{reportUserId},#{reportContent},#{targetId})")
+    @Insert("INSERT INTO report_task(type,report_user_id,report_content,target_id, vote_result) " +
+            "VALUES(#{type},#{reportUserId},#{reportContent},#{targetId},#{voteResult})")
     @Options(keyColumn = "id", keyProperty = "id", useGeneratedKeys = true)
     void insert(ReportTask reportTask);
 
@@ -49,4 +49,14 @@ public interface ReportTaskMapper {
             "SET vote_result=#{voteResult} " +
             "WHERE id=#{id}")
     void update(ReportTask reportTask);
+
+    /**
+     * 查询任务状态
+     * @param id
+     * @return
+     */
+    @Select("SELECT  vote_result " +
+            "FROM report_task " +
+            "WHERE id=#{id}")
+    long getReportResult(@Param("id") long id);
 }

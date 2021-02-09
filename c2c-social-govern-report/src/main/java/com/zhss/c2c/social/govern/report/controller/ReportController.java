@@ -100,6 +100,18 @@ public class ReportController {
             Long reviewerId,
             Long reportTaskId,
             Integer voteResult) {
+
+        // 修复：其实是有一个bug 一共5票都通过 然后后面 三票都会计算发放一次奖励
+        // 反查 如果投票结束 直接返回投票已结束
+
+        boolean reportResult = reportTaskService.getReportResult(reportTaskId);
+
+        if (reportResult) {
+            return "success";
+        }
+
+
+
         // 本地数据库记录投票
         reportTaskVoteService.vote(reviewerId, reportTaskId, voteResult);
         // 调用评审员服务，标记本次投票结束

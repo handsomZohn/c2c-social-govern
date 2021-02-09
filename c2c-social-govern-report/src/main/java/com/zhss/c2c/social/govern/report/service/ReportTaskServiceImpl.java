@@ -37,4 +37,14 @@ public class ReportTaskServiceImpl implements ReportTaskService {
         return reportTaskDAO.queryById(id);
     }
 
+    /**
+     * 根据id查询举报任务是否结束 true结束 false未结束
+     * @param id
+     * @return
+     */
+    @Override
+    public boolean getReportResult(long id) {
+        return reportTaskDAO.getReportResult(id);
+    }
+
 }
