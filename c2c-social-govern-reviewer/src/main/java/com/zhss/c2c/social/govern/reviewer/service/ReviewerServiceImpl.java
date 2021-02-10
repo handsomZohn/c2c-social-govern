@@ -42,7 +42,11 @@ public class ReviewerServiceImpl implements ReviewerService  {
     @Override
     public List<Long> selectReviewers(Long reportTaskId) {
         // 模拟通过算法选择一批评审员
-        System.out.println("模拟通过算法选择一批评审员");
+        // System.out.println("模拟通过算法选择一批评审员");
+
+
+        System.out.println("dev环境=====================模拟通过算法选择一批评审员");
+        // System.out.println("test环境=====================模拟通过算法选择一批评审员");
 
         List<Long> reviewerIds = new ArrayList<>();
         reviewerIds.add(1L);
